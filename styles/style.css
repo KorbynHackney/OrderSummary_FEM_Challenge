@@ -1,4 +1,18 @@
 html {
+  background: hsl(225, 100%, 94%);
+  color: hsl(224, 23%, 55%);
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+body {
   background-image: url(/pattern-background-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -6,24 +20,78 @@ html {
 }
 
 @media (min-width: 375px) {
-  html {
+  body {
     background-image: url(/pattern-background-desktop.svg);
   }
 }
 
 .card-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     background-color: #FFF;
-    max-width: 300px;
-    margin: 2em auto 0 auto;
+    max-width: 330px;
+    margin: 5em auto 3em auto;
+    border-radius: 20px;
+}
+
+.main-image {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  max-width: 100%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2em 1em 1.5em 1em;
+  line-height: 1.6em;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: .2em;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+h1, h2 {
+  color: hsl(223, 47%, 23%);
 }
 
 p {
     font-size: 16px;
 }
 
+.current-plan {
+  display: flex;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  padding: 0 1.2em;
+  border-radius: 15px;
+}
+
+.music-icon {
+  width: 3em;
+  height: 3em;
+  padding-right: 1em;
+}
+
+.plan-price {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2.5em;
+}
+
+.plan-price > span {
+  font-weight: 500;
+  color:hsl(224, 23%, 55%);
+  margin-top: -.2em;
+}
 
 .attribution {
   font-size: 11px;
@@ -33,16 +101,7 @@ p {
   color: hsl(228, 45%, 44%);
 }
 
-
-/*# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
+/*
 ## Colors
 
     ### Primary
