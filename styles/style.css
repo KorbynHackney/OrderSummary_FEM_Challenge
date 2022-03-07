@@ -1,6 +1,15 @@
 html {
   background: hsl(225, 100%, 94%);
   color: hsl(224, 23%, 55%);
+  background-image: url(/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 375px) {
+  html {
+    background-image: url(/pattern-background-desktop.svg);
+  }
 }
 
 img {
@@ -13,23 +22,14 @@ a {
 }
 
 body {
-  background-image: url(/pattern-background-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: 'Red Hat Display', sans-serif;
-}
-
-@media (min-width: 375px) {
-  body {
-    background-image: url(/pattern-background-desktop.svg);
-  }
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .card-container {
-    background-color: #FFF;
-    max-width: 330px;
-    margin: 5em auto 3em auto;
-    border-radius: 20px;
+  background-color: #fff;
+  width: 325px;
+  margin: 10em auto 6em auto;
+  border-radius: 20px;
 }
 
 .main-image {
@@ -43,15 +43,14 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2em 1em 1.5em 1em;
+  padding: 1.6em 1em 1.5em 1em;
   line-height: 1.6em;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 900;
-  margin-top: 0;
-  margin-bottom: .2em;
+  margin: 0;
 }
 
 h2 {
@@ -59,38 +58,52 @@ h2 {
   font-weight: 900;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: hsl(223, 47%, 23%);
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
+}
+
+.description {
+  padding: 0 0.8em 0.4em 0.8em;
 }
 
 .current-plan {
   display: flex;
   align-items: center;
   background: hsl(225, 100%, 98%);
-  padding: 0 1.2em;
+  padding: 0.3em 0.5em;
   border-radius: 15px;
+  line-height: 1.4em;
+  width: 88%;
 }
 
 .music-icon {
   width: 3em;
   height: 3em;
-  padding-right: 1em;
+  padding-right: 1.2em;
+  padding-left: 0.5em;
 }
 
 .plan-price {
   display: flex;
   flex-direction: column;
-  padding-right: 2.5em;
+  font-size: 14px;
 }
 
 .plan-price > span {
   font-weight: 500;
-  color:hsl(224, 23%, 55%);
-  margin-top: -.2em;
+  color: hsl(224, 23%, 55%);
+  margin-top: -0.2em;
+}
+
+.change {
+  font-size: 13px;
+  font-weight: 900;
+  padding-left: 3.5em;
 }
 
 .attribution {
