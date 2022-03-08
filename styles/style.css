@@ -1,7 +1,7 @@
 html {
   background: hsl(225, 100%, 94%);
   color: hsl(224, 23%, 55%);
-  background-image: url(/pattern-background-mobile.svg);
+  background-image: url(/pattern-background-mobile.svg); /*REMEMBER remove first "/" in url path so it works with github pages*/
   background-repeat: no-repeat;
   background-size: cover;
 }
