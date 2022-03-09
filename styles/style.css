@@ -1,14 +1,14 @@
-html {
+body {
   background: hsl(225, 100%, 94%);
   color: hsl(224, 23%, 55%);
-  background-image: url(/pattern-background-mobile.svg); /*REMEMBER remove first "/" in url path so it works with github pages*/
+  background-image: url(pattern-background-mobile.svg); /*REMEMBER remove first "/" in url path so it works with github pages*/
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media (min-width: 375px) {
-  html {
-    background-image: url(/pattern-background-desktop.svg);
+@media (min-width: 400px) {
+  body {
+    background-image: url(pattern-background-desktop.svg);
   }
 }
 
@@ -28,9 +28,15 @@ body {
 .card-container {
   background-color: #fff;
   width: 325px;
-  margin: 10em auto 6em auto;
+  margin: 6em auto 6em auto;
   border-radius: 20px;
-  box-shadow: 0 1em 2em rgba(56,42,225,0.2);
+  box-shadow: 0 1em 2em rgba(56, 42, 225, 0.2);
+}
+
+@media (min-width: 400px) {
+  .card-container {
+    width: 425px;
+  }
 }
 
 .main-image {
@@ -45,6 +51,7 @@ body {
   align-items: center;
   text-align: center;
   padding: 1.6em 1em 1.5em 1em;
+  margin: 0 auto;
   line-height: 1.6em;
 }
 
@@ -53,6 +60,13 @@ h1 {
   font-weight: 900;
   color: hsl(223, 47%, 23%);
   margin: 0;
+}
+
+@media (min-height: 425px) {
+  h1 {
+    font-size: 24px;
+    margin: 0.6em 0 0 0;
+  }
 }
 
 h2 {
@@ -66,6 +80,14 @@ p {
 
 .description {
   padding: 0 0.8em 0.4em 0.8em;
+  max-width: 20em;
+}
+
+.music-icon {
+  width: 3em;
+  height: 3em;
+  padding-right: 1.2em;
+  padding-left: 0.5em;
 }
 
 .current-plan {
@@ -78,11 +100,28 @@ p {
   width: 88%;
 }
 
-.music-icon {
-  width: 3em;
-  height: 3em;
-  padding-right: 1.2em;
-  padding-left: 0.5em;
+.change {
+  font-size: 13px;
+  font-weight: 900;
+  padding-left: 3.5em;
+}
+
+@media (min-width: 425px) {
+  .music-icon {
+    width: 2.7em;
+    height: 2.7em;
+    padding-left: 0.8em;
+  }
+
+  .current-plan {
+    padding: 0.6em 0.5em;
+    width: 82%;
+    line-height: 1.6em;
+  }
+
+  .change {
+    padding-left: 8em;
+  }
 }
 
 .plan-price {
@@ -98,23 +137,32 @@ p {
   margin-top: -0.2em;
 }
 
-.change {
-  font-size: 13px;
-  font-weight: 900;
-  padding-left: 3.5em;
-}
-
 .btn-container {
   background-color: hsl(245, 75%, 53%);
   color: #fff;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   border-radius: 10px;
   width: 88%;
   margin-top: 1.5em;
-  margin-bottom: .5em;
-  box-shadow: 0 .8em 1.5em rgba(56,42,225,0.4);
+  margin-bottom: 0.6em;
+  box-shadow: 0 0.8em 1.5em rgba(56, 42, 225, 0.4);
 }
 
+.cancel {
+  padding-bottom: 0;
+}
+
+@media (min-height: 425px) {
+  .btn-container {
+    width: 82%;
+    margin-top: 1.8em;
+    margin-bottom: 0.8em;
+  }
+
+  .cancel {
+    padding-bottom: 0.6em;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
