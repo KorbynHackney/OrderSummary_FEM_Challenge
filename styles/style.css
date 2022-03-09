@@ -6,7 +6,7 @@ body {
   background-size: cover;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 425px) {
   body {
     background-image: url(pattern-background-desktop.svg);
   }
@@ -33,7 +33,7 @@ body {
   box-shadow: 0 1em 2em rgba(56, 42, 225, 0.2);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 425px) {
   .card-container {
     width: 425px;
   }
