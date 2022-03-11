@@ -127,7 +127,7 @@ p {
 
 .change:hover {
   text-decoration: none;
-  opacity: .7;
+  opacity: .75;
 }
 
 .plan-price {
@@ -171,7 +171,8 @@ p {
 }
 
 .btn-container:hover {
-  opacity: .7;
+  opacity: .75;
+  cursor: pointer;
 }
 
 .cancel:hover {
