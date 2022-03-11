@@ -172,6 +172,9 @@ p {
 
 .btn-container:hover {
   opacity: .75;
+}
+
+.btn-container > h2:hover {
   cursor: pointer;
 }
 
