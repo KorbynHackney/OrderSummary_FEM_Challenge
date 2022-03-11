@@ -3,7 +3,7 @@ body {
   color: hsl(224, 23%, 55%);
   background-image: url(pattern-background-mobile.svg); /*REMEMBER remove first "/" in url path so it works with github pages*/
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media (min-width: 425px) {
@@ -104,6 +104,7 @@ p {
   font-size: 13px;
   font-weight: 900;
   padding-left: 3.5em;
+  color: hsl(245, 75%, 53%);
 }
 
 @media (min-width: 425px) {
@@ -122,6 +123,11 @@ p {
   .change {
     padding-left: 8em;
   }
+}
+
+.change:hover {
+  text-decoration: none;
+  opacity: .7;
 }
 
 .plan-price {
@@ -163,6 +169,16 @@ p {
     padding-bottom: 0.6em;
   }
 }
+
+.btn-container:hover {
+  opacity: .7;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
